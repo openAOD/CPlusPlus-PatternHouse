@@ -1,7 +1,7 @@
-# Python- PatternHouse
+# CPlusPlus- PatternHouse
 
 <p align="center">
-  <img src="https://github.com/aryashah2k/Printing-Pattern-Programs/blob/main/assets/python.png">
+  <img src="https://github.com/aryashah2k/Printing-Pattern-Programs/blob/main/assets/cpp.png">
 </p>
 
 ### *Due to a large number of patterns, individual readme files have been created for each pattern type and the below table of contents lists all of them for the contributors to explore.*
