@@ -6,19 +6,20 @@ int main()
 {
   
   int n=4;
+  int p=0;
   for(int i=1;i<=n;i++)
-  {
+  {  p=i;
   	 for(int j=1;j<=i;j++)
   	 {
   	 	cout<<i<<" ";
 	   }
 	   
-	   for(int k=1;k<=2*n-2*i;k++)
+	   for(int k=1;k<2*(n-i);k++)
 	   {
 	   	cout<<"  ";
 	   }
-	   
-	   for(int j=1;j<=i;j++)
+	   if(i==n) p--;  
+	   for(int j=1;j<=p;j++)
 	   {
 	   	 cout<<i<<" ";
 	   }
@@ -32,7 +33,7 @@ int main()
   	 	cout<<i<<" ";
 	 }
 	   
-	 for(int k = 1;k<=2*(i-n);k++)
+	 for(int k = 1;k<2*(i-n);k++)
      {
 	   	  cout<<"  ";
 	 }
@@ -48,5 +49,4 @@ int main()
   
  return 0;
 }
-
 
