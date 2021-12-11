@@ -21,7 +21,8 @@ int main()
 
 void printPattern (int totalLines) {
 
-    char Alphabet = 'A';
+    int counter = 0;
+    char Alphabet;
 
     for (int i = 1; i <= totalLines; i++) {
 
@@ -31,7 +32,10 @@ void printPattern (int totalLines) {
 
                 if (!(j & 1)) {
 
-                    cout << Alphabet++ << " ";
+                    Alphabet = (65 + (counter++));
+                    counter %= 26;
+
+                    cout << Alphabet << " ";
                 } else {
 
                     cout << "* ";
@@ -40,7 +44,10 @@ void printPattern (int totalLines) {
 
                 if ((j & 1)) {
 
-                    cout << Alphabet++ << " ";
+                    Alphabet = (65 + (counter++));
+                    counter %= 26;
+                    
+                    cout << Alphabet << " ";
                 } else {
 
                     cout << "* ";
