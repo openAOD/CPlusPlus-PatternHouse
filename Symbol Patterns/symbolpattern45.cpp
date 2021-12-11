@@ -2,8 +2,6 @@
 using namespace std;
 
 void printPattern (int);
-void printUpperHalf (int);
-void printLowerHalf (int, int);
 
 int main()
 {
@@ -23,56 +21,20 @@ int main()
 
 void printPattern (int totalLines) {
 
-    int printLines = ((totalLines + 1) / 2);
-    printUpperHalf (printLines);
+    for (int i = totalLines; i >= 1; i--) {
 
-    int startIndex = ((totalLines % 2) + 1);
-    printLowerHalf (printLines, startIndex);
+        for (int j = 1; j <= i; j++) {
+
+            if (i & 1) {
+
+                cout << i << " ";
+            } else {
+
+                cout << "* ";
+            }
+        }
+
+        cout << endl;
+    }
     
-}
-
-void printUpperHalf (int totalLines) {
-
-    int lastPrint;
-
-    for(int i = totalLines; i >= 1; i--) {
-
-        lastPrint = ((2 * totalLines) - i);
-
-        for (int j = 1; j <= lastPrint; j++) {
-
-            if(j >= i) {
-
-                cout << "* ";
-            } else {
-
-                cout << "  ";
-            }
-        }
-
-        cout << endl;
-    }
-}
-
-void printLowerHalf (int totalLines, int startIndex) {
-
-    int lastPrint;
-
-    for(int i = startIndex; i <= totalLines; i++) {
-
-        lastPrint = ((2 * totalLines) - i);
-
-        for (int j = 1; j <= lastPrint; j++) {
-
-            if(j >= i) {
-
-                cout << "* ";
-            } else {
-
-                cout << "  ";
-            }
-        }
-
-        cout << endl;
-    }
 }
