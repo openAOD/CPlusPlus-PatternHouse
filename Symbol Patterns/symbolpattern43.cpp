@@ -2,7 +2,7 @@
 using namespace std;
 
 void printPattern (int);
-
+char swapCharacter (char);
 
 int main()
 {
@@ -22,19 +22,29 @@ int main()
 
 void printPattern (int totalLines) {
 
+    char character = '#';
+
     for (int i = totalLines; i >= 1; i--) {;
 
         for (int j = 1; j <= i; j++) {
 
-            if (i & 1) {
-
-                cout << "# ";
-            } else {
-
-                cout << "* ";
-            }
+            cout << character << " ";
         }
 
+        character = swapCharacter (character);
         cout << endl;
+    }
+}
+
+char swapCharacter (char character) {
+
+    if (character == '#') {
+
+        character = '*';
+        return character;
+    } else {
+
+        character = '#';
+        return character;
     }
 }
