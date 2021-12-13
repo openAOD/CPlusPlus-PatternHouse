@@ -24,7 +24,7 @@ void printPattern (int totalLines) {
 
     bool printStar = false;
 
-    for (int i = totalLines; i >= 1; i--) {;
+    for (int i = totalLines; i >= 1; i--) {
 
         for (int j = 1; j <= i; j++) {
 

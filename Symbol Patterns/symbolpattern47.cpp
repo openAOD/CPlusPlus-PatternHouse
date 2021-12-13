@@ -22,7 +22,7 @@ int main()
 
 void printPattern (int totalLines) {
 
-    for (int i = totalLines; i >= 1; i--) {;
+    for (int i = totalLines; i >= 1; i--) {
 
         for (int j = 1; j <= i; j++) {
 
