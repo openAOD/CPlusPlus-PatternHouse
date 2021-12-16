@@ -15,7 +15,7 @@ int main()
     }
     for (int i=1;i<N+1;i++)
     {
-        cout << f[i] << "\n"; //print the array
+        cout << f[i] << " "; //print the array
     }
     return 0;
 }

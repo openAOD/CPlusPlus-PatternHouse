@@ -9,7 +9,7 @@ int main()
    int n=N;
    while(n) //if n numbers are over, loop exits
    {
-       cout <<  num << "\n";
+       cout <<  num << " ";
        num=num*2;    //series logic : current number is previous number *2
        n=n-1;
    }

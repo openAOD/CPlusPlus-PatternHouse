@@ -6,7 +6,7 @@ int main()
  
     for (int i=1;i<=N;i++)
     {
-        cout <<  2*i << "\n"; //series logic : multiples of 2
+        cout <<  2*i << " "; //series logic : multiples of 2
     }
 
     return 0;
