@@ -1,24 +1,19 @@
 #include<bits/stdc++.h>
-//#include<iostream>
 using namespace std;
 int main(){
-    for(int i=0;i<5;i++){   
+    for(int i=4;i>=0;i--){    //for reverse order (E to A)
         int k=4-i;
         while (k--)         //for spaces before first character
         {
             cout<<"  ";
         }
         
-        for(int j=1;j<=i;j++){
-            char a=64+j;
-            cout<<a<<" ";
-        }
-        for (int j = i; j>=0; j--)
+        for (int j = 0; j < 2*i+1; j++) //odd number of chars at each row
         {
-            char a=65+j;
+            char a=65+j;                 // the character at each row
             cout<<a<<" ";
         }
-        cout<< endl;
+        cout<<endl;
     }
  return 0;
 }
