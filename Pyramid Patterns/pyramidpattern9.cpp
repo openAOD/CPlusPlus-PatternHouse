@@ -23,7 +23,7 @@ int main () {
 
 void printPattern (int totalLines) {
 
-    int whiteSpace, printStar;
+    int whiteSpace, printAlphabet;
     char alphabet = (64 + totalLines);
 
     for (int i = totalLines; i >= 1; i--) {
@@ -31,9 +31,9 @@ void printPattern (int totalLines) {
         whiteSpace = (totalLines - i);
         printWhitespaces (whiteSpace);
 
-        printStar = ((2 * i) - 1);
+        printAlphabet = ((2 * i) - 1);
 
-        for (int j = 1; j <= printStar; j++) {
+        for (int j = 1; j <= printAlphabet; j++) {
 
             if (j & 1) {
 

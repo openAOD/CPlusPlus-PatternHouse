@@ -23,16 +23,16 @@ int main () {
 
 void printPattern (int totalLines) {
 
-    int whiteSpace, printStar, counter = 1;
+    int whiteSpace, printNumber, counter = 1;
 
     for (int i = 1; i <= totalLines; i++) {
 
         whiteSpace = (totalLines - i);
         printWhitespaces (whiteSpace);
 
-        printStar = ((2 * i) - 1);
+        printNumber = ((2 * i) - 1);
 
-        for (int j = 1; j <= printStar; j++) {
+        for (int j = 1; j <= printNumber; j++) {
 
             cout.width(2);
             cout << counter++ << " ";

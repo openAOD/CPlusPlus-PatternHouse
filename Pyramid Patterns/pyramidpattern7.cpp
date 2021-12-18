@@ -23,16 +23,16 @@ int main () {
 
 void printPattern (int totalLines) {
 
-    int whiteSpace, printStar;
+    int whiteSpace, printNumber;
 
     for (int i = totalLines; i >= 1; i--) {
 
         whiteSpace = (totalLines - i);
         printWhitespaces (whiteSpace);
 
-        printStar = ((2 * i) - 1);
+        printNumber = ((2 * i) - 1);
 
-        for (int j = 1; j <= printStar; j++) {
+        for (int j = 1; j <= printNumber; j++) {
 
             if (j & 1) {
 
