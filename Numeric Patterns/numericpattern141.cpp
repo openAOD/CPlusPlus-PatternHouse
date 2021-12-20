@@ -6,12 +6,12 @@ int main(){
 
     int n=5;
 
-    for(int i=0; i<n; i++){
-        for(int j=0; j<=i; j++){
-            cout<<1<<" ";
-        }
-        for(int j=i; j<n-1; j++){
+    for(int i=1; i<=n; i++){
+        for(int j=0; j<n/2; j++){
             cout<<0<<" ";
+        }
+        for(int j=0; j<=n/2; j++){
+            cout<<1<<" ";
         }
         cout<<endl;
     }
