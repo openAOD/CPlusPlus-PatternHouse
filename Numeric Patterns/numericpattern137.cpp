@@ -4,14 +4,14 @@ using namespace std;
 
 int main(){
 
-    int n=5;
+    int n=4;
 
+    int k=1;
     for(int i=0; i<n; i++){
-        for(int j=i; j>=1; j--){
-            cout<<j<<" ";
-        }
-        for(int j=0; j<n-i; j++){
-            cout<<j<<" ";
+        for(int j=0; j<n; j++){
+            cout<<k++<<" ";
+            if(k%8==0)
+                k+=2;
         }
         cout<<endl;
     }
