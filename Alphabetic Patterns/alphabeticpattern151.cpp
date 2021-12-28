@@ -1,17 +1,20 @@
-#include<iostream>
+#include <iostream>
 using namespace std;
-int main(){
-    int height=5;
+int main()
+{
+    int height = 5;
     int i, j;
-    for (i = 0; i < height; i++) {
-        cout <<"*";
-        for (j = 0; j <= height; j++) {
+    for (i = 0; i < height; i++)
+    {
+        cout << "*";
+        for (j = 0; j <= height; j++)
+        {
             if (i == height - 1)
-                cout <<"*";
+                cout << "*";
             else
-                cout <<" ";
+                cout << " ";
         }
-        cout <<"\n";
+        cout << "\n";
     }
     return 0;
 }
