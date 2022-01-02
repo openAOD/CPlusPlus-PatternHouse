@@ -5,7 +5,7 @@ int main() {
     int n;
     cin>>n; // No. of lines to be printed
     
-    for(int row = 1; row <= 5; row++) {
+    for(int row = 1; row <= n; row++) {
         for(int col = 1; col <= n; col++) {
             int value = col == n/2 ? row : col;
             if(col == n/2 + 1 || row == n/2 + 1) {
