@@ -5,7 +5,7 @@ int main() {
     int n;
     cin>>n; // No. of lines to be printed
     
-    for(int row = 0; row <= 5; row++) {
+    for(int row = 0; row <= n; row++) {
         for(int col = 1; col <= n - row + 1; col++) {
             if(col == n - row + 1) {
                 cout<<(n - row)<<" ";
