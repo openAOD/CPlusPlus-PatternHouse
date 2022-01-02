@@ -18,7 +18,7 @@ int main() {
               cout<<value;
             }
             else {
-                cout<<" ";
+                cout<<"   ";
             }
         }
         cout<<endl;
