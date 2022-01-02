@@ -8,10 +8,10 @@ int main() {
     for (int i = 1; i <= n; i++) {
         for (int j = 1; j <= i; j++) {
             if (i==n){
-                cout<<j;
+                cout<<j<<" ";
             }
             else if(j==1 || j==i){
-              cout<<j;
+              cout<<j<<" ";
             } 
             else {
                 cout<<" ";
@@ -24,7 +24,7 @@ int main() {
 // Sample Input :- 5
 // Output :-
 // 1
-// 12
-// 1 3
-// 1  4
-// 12345
+// 1 2
+// 1   3
+// 1     4
+// 1 2 3 4 5
