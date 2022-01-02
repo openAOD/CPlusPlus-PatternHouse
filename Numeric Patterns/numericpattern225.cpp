@@ -19,6 +19,7 @@ int main() {
 }
 
 // Sample Input :- 5
+// Output :-
 // * * * * * 5
 // * * * * 4
 // * * * 3
