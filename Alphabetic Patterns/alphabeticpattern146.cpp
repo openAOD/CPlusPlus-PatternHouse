@@ -2,32 +2,45 @@
 using namespace std;
 
 int main(){
-    int i, j;
-    int height = 5;
-    int width = 2*height-1;
-    width--;
-    for (i = 0; i < height; i++) {
-        for (j = 0; j < width; j++) {
-            if ((i == 0 || i == height - 1)
-                && (j == 0 || j == width - 1))
-                cout <<" ";
-            else if (j == 0)
-                cout <<"*";
-            else if (i == 0 && j <= height)
-                cout <<"*";
-            else if (i == height / 2
-                    && j > height / 2)
-                cout <<"*";
-            else if (i > height / 2
-                    && j == width - 1)
-                cout <<"*";
-            else if (i == height - 1
-                    && j < width)
-                cout <<"*";
-            else
-                cout <<" ";
-        }
-        cout <<"\n";
-    }
+   
+   int size=5;
+   int top=0;
+   int bottom=size-1;
+   
+   for(int i=0;i<size;i++){
+       
+       if(i==top || i==bottom) //Top row and last row
+       {
+           for(int j=0;j<size;j++)
+                cout<<"*"<<" ";
+            cout<<endl;
+       } 
+       
+       else if(i==top+1){ //Second row
+            cout<<"*"<<endl;
+       }
+       
+       else if(i==size/2){ //Middle row
+           for(int j=0;j<size;j++){
+               if(j!=1)
+                cout<<"*"<<" ";
+               else
+                cout<<" "<<" ";
+           }
+             
+            cout<<endl;
+       }
+       
+       else{ //(i==bottom-1) Second last row
+           for(int j=0;j<size;j++){
+             if(j==0 || j==size-1)
+                cout<<"*"<<" ";
+             else
+                cout<<" "<<" ";
+            }
+            cout<<endl;
+       }
+   }
+   
     return 0;
 }
