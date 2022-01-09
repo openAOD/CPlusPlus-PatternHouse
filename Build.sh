@@ -5,7 +5,7 @@ set -e
 for directory in */ ; do
     cd "$directory"
     for file in *.cpp ; do
-      echo "gcc $file"
+      echo "g++ $file"
       g++ -w $file > /dev/null
     done
     cd ..
