@@ -15,5 +15,5 @@ blocks:
             - cp Central/TestSuite/test.sh .
             - rm -rf Central
             - export DATE=$(date)
-            - bash test.sh c | tee "test-report-$DATE"
+            - bash test.sh cpp | tee "test-report-$DATE"
             - artifact push project "test-report-$DATE"
