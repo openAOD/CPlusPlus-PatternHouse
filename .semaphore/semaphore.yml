@@ -5,10 +5,15 @@ agent:
     type: e1-standard-2
     os_image: ubuntu2004
 blocks:
-  - name: Build
+  - name: Test Suite
     task:
       jobs:
-        - name: Build
+        - name: Testing
           commands:
             - checkout
-            - sh ./Build.sh
+            - 'git clone https://github.com/openAOD/Central.git'
+            - cp Central/TestSuite/test.sh .
+            - rm -rf Central
+            - export DATE=$(date)
+            - bash test.sh c | tee "test-report-$DATE"
+            - artifact push project "test-report-$DATE"
